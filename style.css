@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code' , sans-serif;
+}
+.fas{
+    font-size: 20px;
+}
+
+.fa-file-download{
+    font-size: 30px;
+    color: rgb(89, 27, 233);
+    transition: color 0.4s;
+}
+
+.clear{
+    padding-right: 50px;
+    
+}
+
+.clr-Picker , .btn , #clr-picker{
+    width: 28px;
+    height: 28px;
+    margin: 0 5px;
+    background: transparent;
+    border: none;
+    transition: all 0.4s;
+}
+
+#downloadbtn , .downloadtable{
+    position: fixed;
+    bottom: 5px;
+    left: 49%;
+    background: transparent;
+    border: none;
+    transition: all 0.4s ;
+}
+
+.clr-Picker:active{
+    border: 5px solid rgb(28, 165, 206);
+}
+
+.clr-Picker{
+    border-radius: 50%;
+    border: 2px solid rgb(58, 57, 57);
+}
+
+.fa-file-download:hover{
+    color: rgb(90, 36, 126);
+}
+
+.undo:hover{
+    transform: rotate(-30deg);
+    color: rgb(36, 65, 126);
+}
+
+.clear:hover{
+    color: rgb(255, 71, 71);
+}
+
+.fa-trash{
+    margin-right: 10px;
+}
+
+.picker , .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rangeBar{
+    margin-left: 30px;
+    width: 120px;
+    height: 5px;
+}
+
+.controls{
+    height: 60px;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: rgba(97, 97, 109, 0.356) 0px 7px 29px 0px;
+    border-radius: 0px 0px 20px 20px;
+    margin: auto;
+}

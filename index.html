@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Jam>Board</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Control Pannel -->
+    <div class="controls">
+        <button onclick="undoLast()" type="button" class="btn undo"><i class="fas fa-undo"></i></button>
+        <button onclick="clearCanvas()" type="button" class="btn clear" id = "clear"><i class="fas fa-trash"></i></i></button>
+
+        <div class = "picker">
+            <div class="clr-Picker red" style="background-color: red;" id="red"></div>
+            <div class="clr-Picker blue" style="background-color: blue;" id="blue"></div>
+            <div class="clr-Picker yellow" style="background-color: yellow;" id="yellow"></div>
+            <div class="clr-Picker green" style="background-color: green;" id="green"></div>
+        </div>
+        <input oninput="draw_color = this.value"  type="color" id="clr-picker">
+        <input oninput="draw_width = this.value / 5" type="range" name="range" id="rangeBar" min="1" max="100">
+    </div>
+
+    <!-- Adding Board Canvas-->
+    <div class="board">
+        <canvas id = "main_board"></canvas>
+    </div>
+    
+    <!-- Adding Dowload Button -->
+    <button class="downloadtable" onclick="downloadtable()"><i class="fas fa-file-download"></i></button>
+</body>
+
+<!-- Dom to image library-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    
+<!-- Adding script -->
+<script src="main.js"></script>
+
+</html>
